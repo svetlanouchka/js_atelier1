@@ -1,14 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JS Atelier 1</title>
+    <title>JS Atelier 1 - C'est plus ou c'est moins</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>JS Atelier 1</h1>
+    <section>
+        <h1>C'est plus ou c'est moins</h1>
+        <p>Devinez le nombre mystère entre 1 et 100</p>
+
+        <div class="game-area">
+            <label for="number">Votre proposition :</label>
+            <input type="number" id="number" placeholder="Entrez un nombre entre 1 et 100" min="1" max="100">
+            <button id="submit-btn" class="neubutton">Envoyer</button>
+        </div>
+
+        <p id="feedback" class="feedback">Bonne chance !</p>
+        <p id="attempts" class="attempts">Nombre d'essais : <span>0</span></p>
+
+        <button id="restart-btn" class="hidden neubutton">Recommencer</button>
+    </section>
     <script src="script.js"></script>
 </body>
 
