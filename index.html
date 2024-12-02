@@ -1,15 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JS Atelier 1</title>
+    <title>Devinez le Nombre</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <h1>JS Atelier 1</h1>
+    <div class="container">
+        <h1>Devinez le Nombre</h1>
+        <p>Essayez de trouver un nombre entre 1 et 100.</p>
+
+        <input type="number" id="playerInput" placeholder="Votre nombre ici" min="1" max="100">
+        <button id="submitButton">Devinez</button>
+
+        <p id="message">Entrez un nombre pour commencer.</p>
+        <p id="attempts">Tentatives : <span id="attemptList">Aucune pour l'instant</span></p>
+
+        <button id="restartButton" style="display: none;">Rejouer</button>
+    </div>
     <script src="script.js"></script>
 </body>
-
 </html>
